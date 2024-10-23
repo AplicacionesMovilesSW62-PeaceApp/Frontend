@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    tools:context=".Profile.EditProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile_main"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/profile_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/imageBorder"
+            android:layout_width="139dp"
+            android:layout_height="139dp"
+            app:strokeColor="#E9ECF1"
+            app:strokeWidth="14.5dp"
+            app:cardCornerRadius="100dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:cardElevation="0dp"
+            >
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/image_user_default" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageBorder">
+
+            <TextView
+                android:id="@+id/txt_placeholder_name"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-150dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="end"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:background="@drawable/rounded_background"
+                android:hint="Ingresa tu nombre"
+                android:text="Jhon"
+                android:inputType="text"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_placeholder_name"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:paddingHorizontal="16dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_surname"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_name">
+
+            <TextView
+                android:id="@+id/txt_placeholder_surname"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-150dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="end"
+
+                android:text="Apellido"
+
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/etSurname"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:background="@drawable/rounded_background"
+
+                android:hint="Ingresa tu apellido"
+                android:text="Doe"
+
+                android:inputType="text"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_placeholder_surname"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingHorizontal="16dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_surname">
+
+            <TextView
+                android:id="@+id/txt_placeholder_phone"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-150dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="end"
+
+                android:text="Teléfono"
+
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:background="@drawable/rounded_background"
+
+                android:hint="Ingresa tu teléfono"
+                android:text="999666333"
+
+                android:inputType="text"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_placeholder_phone"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingHorizontal="16dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Layout_email"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_phone">
+
+            <TextView
+                android:id="@+id/txt_placeholder_email"
+                android:text="Correo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-150dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txt_user_email"
+                tools:text="jd123@gmail.com"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txt_placeholder_email"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Layout_password"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Layout_email">
+
+            <TextView
+                android:id="@+id/txt_placeholder_password"
+                android:text="Contraseña"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-150dp"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="end"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txt_user_password"
+                tools:text="********"
+                android:inputType="textPassword"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/txt_placeholder_password"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                />
+            <ImageView
+                android:id="@+id/iv_eye"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_open_eye"
+                app:layout_constraintEnd_toEndOf="@id/Layout_password"
+                app:layout_constraintTop_toTopOf="@id/Layout_password"
+                app:layout_constraintBottom_toBottomOf="@id/Layout_password"
+                app:tint="#B6B6B6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:elegantTextHeight="true"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSave"
+            app:layout_constraintTop_toBottomOf="@+id/Layout_password"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="@color/disabled"
+            />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:elegantTextHeight="true"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnCancel"
+            app:layout_constraintTop_toTopOf="@+id/btnCancel"
+            android:backgroundTint="@color/peaceapp_blue_light"
+            android:layout_marginEnd="60dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_logout"
+                app:tint="#A2A2A2"/>
+            <TextView
+                android:id="@+id/tvEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:elegantTextHeight="true"
+                android:textColorHighlight="@color/danger"
+                android:text="Cerrar sesión"
+                android:textColor="#A2A2A2"
+                android:textSize="11sp"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

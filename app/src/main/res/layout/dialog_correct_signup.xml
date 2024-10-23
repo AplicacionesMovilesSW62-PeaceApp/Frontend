@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:background="@android:color/transparent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="37dp"
+        >
+
+        <ImageView
+            android:id="@+id/ivCheck"
+            android:layout_width="83dp"
+            android:layout_height="83dp"
+            android:src="@drawable/ic_check"
+            app:tint="@color/positive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvCorrectUpdate"
+            android:layout_marginVertical="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Tu cuenta ha sido creada correctamente!"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCheck"
+            app:layout_constraintBottom_toTopOf="@+id/btnContinue"
+            />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13sp"
+            android:elegantTextHeight="true"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCorrectUpdate"
+            android:backgroundTint="@color/disabled"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

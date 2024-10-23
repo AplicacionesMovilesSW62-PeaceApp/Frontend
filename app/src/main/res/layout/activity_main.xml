@@ -5,40 +5,40 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#CCF3F8"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/mainTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="50sp"
         android:fontFamily="@font/poppins_light"
+        android:textColor="@color/peaceapp_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/mainTxt"
-        android:textColor="@color/peaceapp_blue"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:layout_width="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Esta es una prueba jiji"
+        android:layout_margin="20dp"
+        android:text="Profile"
         app:layout_constraintTop_toBottomOf="@+id/mainTxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/btnPrueba"
         />
-    <EditText
+
+    <Button
         android:layout_width="match_parent"
-        android:layout_margin="20dp"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Map"
         app:layout_constraintTop_toBottomOf="@+id/btnPrueba"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:hint="Este es un hint"
+        android:id="@+id/btnMap"
         />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

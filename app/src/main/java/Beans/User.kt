@@ -1,4 +1,0 @@
-package Beans
-
-class User {
-}

@@ -37,6 +37,13 @@ android {
 }
 
 dependencies {
+    // MAPBOX [Para mostrar mapas]
+    implementation("com.mapbox.maps:android:11.6.1")
+    // Search Mapbox
+    implementation("com.mapbox.search:mapbox-search-android-ui:2.5.0")
+    //Cloudinary
+    implementation("com.cloudinary:cloudinary-android:3.0.2")
+
     // RETROFIT [Para consumir la api]
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     // gson
@@ -44,12 +51,18 @@ dependencies {
 
     // PICASSO [Para mostrar imágenes]
     implementation("com.squareup.picasso:picasso:2.8")
+    implementation(libs.play.services.location)
 
     // room
     val room_version = "2.5.0"
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     kapt("androidx.room:room-compiler:$room_version")
+
+    // Views/Fragments Integration
+    val nav_version = "2.8.0"
+    implementation("androidx.navigation:navigation-fragment:$nav_version")
+    implementation("androidx.navigation:navigation-ui:$nav_version")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

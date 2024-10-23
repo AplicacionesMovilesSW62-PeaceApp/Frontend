@@ -1,4 +1,0 @@
-package Interface
-
-interface PlaceHolder {
-}

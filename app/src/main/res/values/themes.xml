@@ -15,7 +15,7 @@
     </style>
     <style name="textViewStyle" parent="Widget.MaterialComponents.TextView">
         <item name="android:fontFamily">@font/poppins_regular</item>
-
     </style>
+
 
 </resources>

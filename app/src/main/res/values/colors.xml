@@ -3,7 +3,18 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="peaceapp_blue">#1C597C</color>
+
+    <color name="disabled">#DCDCDC</color>
     <color name="danger">#EC221F</color>
     <color name="positive">#14AE5C</color>
+    <color name="peaceapp_gray">#F1F5F8</color>
+    <color name="peaceapp_blue_light_disable">#AFCDDD</color>
+    <color name="peaceapp_blue_dark_disable">#5B8399</color>
+    <color name="peaceapp_blue_light">#84A2B3</color>
+    <color name="peaceapp_bg_new_report">#E9ECF1</color>
+    <color name="nav_item_unselected">#83878A</color>
+    <color name="nav_item_selected">#1C597C</color>
+
+    <color name="contact_input_background">#F1F5F8</color>
 
 </resources>
